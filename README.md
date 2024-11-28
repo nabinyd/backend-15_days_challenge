@@ -39,5 +39,27 @@ The focus of today was on bridging SQL and Go seamlessly:
   - Building a type-safe and efficient database interaction layer for the backend application.  
 
 - **Key Takeaway:**  
-  SQLC automates query-to-code generation, reducing errors and saving development time. It ensures consistency between the database and the application code, enhancing reliability.  
+  SQLC automates query-to-code generation, reducing errors and saving development time. It ensures consistency between the database and the application code, enhancing reliability.
+
+---
+
+## **Day 5: Unit Testing CRUD Functions**  
+- Created unit test functions for CRUD operations.  
+- Ensured comprehensive testing for Create, Read, Update, and Delete functionalities to improve code reliability.  
+- Practiced mocking and validating edge cases to cover a wide range of scenarios.  
+
+---
+
+## **Day 6: Database Transactions and Deadlocks**  
+- Learned about **database transactions** and their importance in ensuring data consistency and reliability.  
+- Explored techniques to handle **deadlocks** effectively in concurrent database operations.  
+- Improved understanding of multi-user database environments.  
+
+---
+
+## **Day 7: Handling and Avoiding Deadlocks**  
+- Gained deeper insights into handling deadlocks in databases.  
+- Started learning strategies to **avoid deadlocks** for building efficient and scalable backend systems.  
+
+---
 
