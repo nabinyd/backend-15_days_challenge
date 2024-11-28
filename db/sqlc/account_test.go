@@ -5,6 +5,7 @@ import (
 	"database/sql"
 	"fmt"
 	"testing"
+	"time"
 
 	"github.com/nabinyd/backend-15_days_challenge.git/util"
 	"github.com/stretchr/testify/require"
@@ -53,7 +54,7 @@ func TestUpdateAccount(t *testing.T) {
 
 	arg := UpdateAccountParams{
 		ID:      account1.ID,
-		Balance: account1.Balance,
+		Balance: util.RandomMoney(),
 	}
 
 	// Error arises #2
@@ -66,6 +67,7 @@ func TestUpdateAccount(t *testing.T) {
 	require.Equal(t, account1.Owner, account2.Owner)
 	require.Equal(t, account1.Currency, account2.Currency)
 	require.Equal(t, arg.Balance, account2.Balance)
+	require.WithinDuration(t, account1.CreatedAt, account2.CreatedAt, time.Second)
 }
 
 func TestDeleteAccount(t *testing.T) {
