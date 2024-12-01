@@ -1,6 +1,6 @@
 module github.com/nabinyd/backend-15_days_challenge.git
 
-go 1.23.3
+go 1.23
 
 require github.com/lib/pq v1.10.9
 
