@@ -63,3 +63,38 @@ The focus of today was on bridging SQL and Go seamlessly:
 
 ---
 
+## Day 8: Adding Money Function & Isolation Levels  
+- Added a new function to handle money additions in the backend service.  
+- Studied **Database Isolation Levels** and their phenomena:  
+  - **Dirty Reads**  
+  - **Non-Repeatable Reads**  
+  - **Phantom Reads**  
+
+💡 Gained insights into how isolation levels impact database consistency and integrity.  
+
+---
+
+## Day 9: Practicing Read Uncommitted & Read Committed  
+- Practiced **Read Uncommitted** and **Read Committed** isolation levels:  
+  - **Read Uncommitted:** Allows dirty reads but provides minimal isolation.  
+  - **Read Committed:** Prevents dirty reads by ensuring only committed data is read.  
+
+💡 Improved understanding of isolation level trade-offs and their practical applications in database systems.  
+
+---
+
+## Day 10: Advanced Isolation Levels & GitHub Actions Setup  
+- Learned about advanced transaction isolation levels:  
+  - **Repeatable Read:** Ensures consistent reads by preventing non-repeatable reads.  
+  - **Serializable:** Guarantees full isolation, eliminating phantom reads.  
+
+- Configured **GitHub Actions** for CI/CD:  
+  - Set up PostgreSQL in the CI environment.  
+  - Integrated `go-migrate` for automated database migrations.  
+  - Configured tests to run seamlessly in the GitHub Actions pipeline.  
+
+💡 Gained practical experience in database management and automated testing workflows.  
+
+---  
+
+
