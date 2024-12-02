@@ -97,4 +97,18 @@ The focus of today was on bridging SQL and Go seamlessly:
 
 ---  
 
+## Day 11: Setting Up Server and Routes with Pagination  
+
+- Set up the **server** for the backend application.
+- Created routes to:
+  - **Get accounts**
+  - **Create accounts**
+  - **List accounts**
+- Implemented **pagination** in the `list accounts` functionality to efficiently handle large datasets.
+
+**Key Takeaway:**
+- Learned the importance of proper server routing and the role of pagination in managing backend data effectively for better scalability and performance.
+
+---
+
 
