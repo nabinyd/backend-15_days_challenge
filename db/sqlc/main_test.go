@@ -7,19 +7,21 @@ import (
 	"testing"
 
 	_ "github.com/lib/pq"
+	"github.com/nabinyd/backend-15_days_challenge.git/util"
 )
 
-const (
-	dbDriver = "postgres"
-	dbSource = "postgresql://root:secret@localhost:5432/simple_bank?sslmode=disable"
-)
 
 var testQueries *Queries
 var testDb *sql.DB
 
 func TestMain(m *testing.M) {
-	var err error
-	testDb, err = sql.Open(dbDriver, dbSource)
+	config, err := util.LoadConfig("../..")
+	if err != nil {
+		log.Fatal("cannot load config")
+	}
+
+
+	testDb, err = sql.Open(config.DBDriver, config.DBSource)
 	if err != nil {
 		log.Fatal("cannot connect to db:", err)
 	}
