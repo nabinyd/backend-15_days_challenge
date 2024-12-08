@@ -111,4 +111,33 @@ The focus of today was on bridging SQL and Go seamlessly:
 
 ---
 
+## **Day 12**  
+- Loaded environment variables using Viper.  
+- Learned to generate mocks using `mockgen` for more effective testing.  
+
+---
+
+## **Day 13**  
+- Achieved 100% test coverage by creating comprehensive test cases.  
+- Added custom validation logic for accounts to ensure data integrity.
+
+---
+
+## **Day 14**  
+- Implemented a currency validator to check valid transactions.  
+- Extended the database schema to include `User` data.  
+- Learned to handle database errors effectively.
+
+---
+
+## **Day 15**  
+- Implemented bcrypt-based password hashing for secure user data storage.  
+- Created unit tests for the User API to ensure functionality and security.  
+
+---
+
+### **Completion and Future Goals**
+Although this marks the end of the 15-day challenge, there's always more to learn in backend development. I'll continue exploring advanced topics and refining my skills.  
+
+
 
